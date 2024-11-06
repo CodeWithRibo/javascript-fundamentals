@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myFunction_one()">1</button>
+    <button onclick="myFunction_two()">2</button>
+    <button onclick="myFunction_three()">3</button>
+    <button onclick="myFunction_plus()">+</button>
+    <button onclick="myFunction_equal()">=</button>
+    <script>
+      let calculation = "";
+
+      function myFunction_one() {
+        calculation += "1";
+        console.log(calculation);
+      }
+      function myFunction_two() {
+        calculation += "2";
+        console.log(calculation);
+      }
+      function myFunction_three() {
+        calculation += "3";
+        console.log(calculation);
+      }
+      function myFunction_plus() {
+        calculation += " + ";
+        console.log(calculation);
+      }
+      function myFunction_equal() {
+        calculation == " = ";
+        console.log(eval(calculation));
+      }
+    </script>
+  </body>
+</html>
